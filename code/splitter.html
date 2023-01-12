@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+    <link rel="stylesheet" type="text/css" href="splitter.css">
+</head>
+<body>
+    <div id="logo">
+        <img src="../images/logo.svg" alt="logo">
+    </div>
+
+    <div id="calculator">
+        <div class="bill">
+            <div class="billEntry">
+                <div class="msg">
+                    <label for="bill">Bill</label>
+                    <div class="errorMsg1">Can't be zero</div>
+                </div>
+                <div class="icon-form">
+                    <img src="../images/icon-dollar.svg" alt="dollarIcon">
+                    <input type="tel" class="totalBill" name="bill" placeholder="0">
+                </div>        
+            </div>
+            <br>
+            <div class="tipPercent">
+                <label for="tip">Select Tip %</label>
+                <div class="tipPercentage">
+                    <button value="0.05" class="tip tip5">5%</button>
+                    <button value="0.10" class="tip tip10">10%</button>
+                    <button value="0.15" class="tip tip15">15%</button>
+                    <button value="0.25" class="tip tip25">25%</button>
+                    <button value="0.50" class="tip tip50">50%</button>
+                    <input type="tel" class="custom" placeholder="Custom">
+                </div>
+            </div>
+            <br>
+            <div class="people">
+                <div class="msg">
+                    <label for="people">Number of People</label>
+                    <div class="errorMsg2">Can't be zero</div>
+                </div>
+                <div class="icon-form">
+                    <img src="../images/icon-person.svg" alt="personIcon">
+                    <input type="tel" class="numberOfPeople" name="people" placeholder="0">
+                </div>        
+            </div>
+        </div>
+        <br>
+        <div class="perPerson">
+            <div class="totalAmount">
+                <div class="calculatedAmount">
+                    <div class="tipAmount">
+                        <p>Tip Amount</p>
+                        <small>/person</small>
+                    </div>
+                    <div class="tipPerPerson">
+                        <h1>$0.00</h1>
+                    </div>
+                </div>
+                <div class="calculatedAmount">
+                    <div class="total">
+                        <p>Total</p>
+                        <small>/person</small>
+                    </div>
+                    <div class="totalPerPerson">
+                        <h1>$0.00</h1>
+                    </div>   
+                </div>
+            </div>
+
+            <button class="reset" required>RESET</button>
+        </div>
+    </div>
+
+    <script src="splitter.js"></script>
+    <br>
+    <noscript>For full functionality of this site, it is necessary to enable Javascript. Here are the <a href="https:www.enablejavascript.io/" target="blank">instructions on how to enable javascript on your web browser.</a></noscript>
+</body>
+</html>
